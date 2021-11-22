@@ -33,8 +33,8 @@ button{
     box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
     position: absolute;
     top: 0;
-    right: 0;
-    background: red;
+    right: -40px;
+    opacity: 0;
 
 }
 .check-box svg{
@@ -47,4 +47,22 @@ svg path{
     stroke-dasharray: 34;
     stroke-dashoffset: 34;
     stroke-linecap: round;
+}
+.active{
+    background: #ff2b75;
+    transition: 1s;
+}
+.active .check-box{
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+.active p{
+    margin-right: 125px;
+    transition: 1s;
+}
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
 }
